@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">nutritionApp</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="best_meals">Top meals for you</string>
+    <string name="diabetics">Diabetes</string>
+    <string name="gym_players">Body\nbuilding</string>
+
+    <string name="weight_loss">Overweight</string>
+    <string name="blood_pressure">Blood pressure</string>
+    <string name="show_all_meals_with_details">Show all meals with details</string>
+    <string name="calories_counter">Calories Counter</string>
+    <string name="do_it_easily">Do it easily</string>
+
+    <string name="search_your_meals">Search your meals</string>
+    <string name="all_meals">All meals</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="total_fat">Total fat</string>
+    <string name="calories">Calories</string>
+    <string name="sugar">Sugar</string>
+    <string name="fabric">Fabric</string>
+    <string name="cholesterol">Cholesterol</string>
+    <string name="protein">Protein</string>
+    <string name="oK">OK</string>
+
+    <string name="total_calories">Total Calories</string>
+    <string name="enter_a_valid_meal_name">Enter a valid meal name</string>
+    <string name="try_a_less_number_of_grams">Try a less number of grams</string>
+    <string name="add_meal">Add meal</string>
+    <string name="meal_name">Meal name</string>
+    <string name="grams">Grams</string>
+    <string name="g">g</string>
+    <string name="add">Add</string>
+
+    <string name="head_text">Best meals</string>
+
+    <string name="diabetics_cards_title_1">Here are the best 100 meals for diabetics. it based on specific calculations, witch contains .</string>
+    <string name="best_diabetes_meals_">Best diabetes meals</string>
+    <string name="french_fries">French Fries</string>
+    <string name="_100">100</string>
+    <string name="cal">cal</string>
+
+    <string name="cheese_burger">Cheese Burger</string>
+    <string name="_125">125</string>
+    <string name="fried_chicken">Fried Chicken</string>
+    <string name="_250">250</string>
+    <string name="_450">450</string>
+    <string name="_500">500</string>
+    <string name="reset">Reset</string>
+    <string name="nothing_to_show">Nothing to show</string>
+    <string name="_0">0</string>
+    <string name="search_in_all_meals">Search in all meals</string>
+    <string name="top_5_blood_pressure_meals">Top 5 Blood Pressure meals</string>
+    <string name="top_5_diabetics_meals">Top 100 diabetes meals</string>
+    <string name="diabetics_meals_information">The most important elements that directly affect diabetic patients: potassium, carbohydrates, sugar, fiber.</string>
+    <string name="search_for_all_meals">Search for all meals</string>
+    <string name="error_label">You’re out of normal daily range</string>
+    <string name="_350g">350g</string>
+    <string name="no_meal_to_show">No meal to show</string>
+    <string name="remove_item">Remove item</string>
+    <string name="calories_shape">Calories shape</string>
+
+    <string name="blood">Blood\npressure</string>
+    <string name="building">building</string>
+    <string name="pressure">pressure</string>
+    <string name="calculate_required_calories">Calculate required calories</string>
+
+    <string name="get_your">get your required calories for your body easily, depending on your weight, age and gender.</string>
+    <string name="home">Home</string>
+    <string name="counter">Counter</string>
+    <string name="calculate">Calculate</string>
+
+    <string name="health_advices">Health Advices</string>
+    <string name="avoid_ultra_processed_foods">Avoid ultra-processed foods</string>
+    <string name="examples_include">Examples include:</string>
+    <string name="snack_cakes_">snack cakes - fast food - frozen meals - canned foods - chips.</string>
+    <string name="in_addition_">In addition to low-quality ingredients like inflammatory fats, added sugar, and refined grains, they’re usually low in fiber, protein, and micronutrients. Thus, they provide mostly empty calories.</string>
+    <string name="advices_details">Ultra-processed foods are foods containing ingredients that are significantly modified from their original form. They often contain additives like added sugar- highly refined oil- salt- preservatives- artificial sweeteners- colors- and flavors as well. Examples include: snack cakes - fast food - frozen meals - canned foods - chips.</string>
+
+    <string name="home_bottom_navigation_bar">Home</string>
+    <string name="search_bottom_navigation_bar">Search</string>
+    <string name="calories_counter_bottom_navigation_bar">Calories Counter</string>
+    <string name="health_advices_bottom_navigation_bar">Health Advices</string>
+    <string name="you_didnt_type_anything_yet">You didn\'t type anything yet.</string>
+    <string name="enter_the_number_of_grams">Enter the number of grams.</string>
+    <string name="enter_your_meal_name">Enter your meal name.</string>
+    <string name="sort_by">Sort by</string>
+    <string name="sodium">Sodium</string>
+    <string name="meal_details">Meal Details</string>
+    <string name="no_data_to_calculated">No data to calculated</string>
+    <string name="next_advice">Next Advice</string>
+
+
+    <string name="title_calculate_required_calories">Calculate required calories</string>
+    <string name="required_calories">Required Calories</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="age_y">Age (years)</string>
+    <string name="get_your_required_calories">Get your required calories</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="is_your_daily_required_calories">Is your daily required calories!</string>
+    <string name="full_to_get_required_calories">Your result will show up here</string>
+    <string name="vitamin_d">Vitamin D</string>
+    <string name="carbohydrate">Carbohydrate</string>
+
+    <string name="please_inter_info">Please inter info</string>
+    <string name="reset_your_inputs">Reset your inputs</string>
+
+
+    <string name="action_app_title_total_calories">Total calories</string>
+
+    <string name="best_diabetes_meals">Diabetics top meals</string>
+    <string name="info_diabetes_meals">Here are the top 100 meals for diabetics. it based on specific calculations, witch contains sugar, carbohydrate, potassium and fiber.</string>
+
+    <string name="best_bodybuilding_meals">Bodybuilding top meals</string>
+    <string name="info_bodybuilding_meals">Here are the top 100 meals for bodybuilders. it based on specific calculations, witch contains protein, total fat and carbohydrate.</string>
+
+    <string name="best_weight_losing_meals">Overweight top meals</string>
+    <string name="info_weight_losing_meals">Here are the top 100 meals for Weight losing. it based on specific calculations, witch contains protein, total fat and carbohydrate.</string>
+
+
+    <string name="best_blood_pressure_meals">Blood pressure top meals</string>
+    <string name="info_blood_pressure_meals">Here are the top 100 meals for blood pressure. it based on specific calculations, witch contains calcium, fiber, sodium and total fat.</string>
+    <string name="default_web_client_id">432147180999-mpk21gmn71spql1php3ra2j9o6rtmhva.apps.googleusercontent.com\n</string>
+
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mealsnav"
+    app:startDestination="@id/resultFragment">
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.nutritionapp.ui.frgment_nave.ResultFragment"
+        android:label="ResultFragment"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_resultFragment_to_breakFastFragment2"
+            app:destination="@id/breakFastFragment2" />
+        <action
+            android:id="@+id/action_resultFragment_to_dinnerFragment2"
+            app:destination="@id/dinnerFragment2" />
+        <action
+            android:id="@+id/action_resultFragment_to_launchFragment2"
+            app:destination="@id/launchFragment2" />
+        <action
+            android:id="@+id/action_resultFragment_to_snacksFragment2"
+            app:destination="@id/snacksFragment2" />
+        <action
+            android:id="@+id/action_resultFragment_to_launchFragment22"
+            app:destination="@id/launchFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/breakFastFragment2"
+        android:name="com.example.nutrition_app.ui.meals.BreakFastFragment"
+        android:label="BreakFastFragment"
+        tools:layout="@layout/fragment_breakfast">
+        <action
+            android:id="@+id/action_breakFastFragment2_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_breakFastFragment2_to_mealsFragment"
+            app:destination="@id/mealsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dinnerFragment2"
+        android:name="com.example.nutrition_app.ui.meals.DinnerFragment"
+        android:label="DinnerFragment"
+        tools:layout="@layout/dinner"/>
+    <fragment
+        android:id="@+id/launchFragment2"
+        android:name="com.example.nutrition_app.ui.meals.LaunchFragment"
+        android:label="LaunchFragment"
+        tools:layout="@layout/lunch"/>
+    <fragment
+        android:id="@+id/snacksFragment2"
+        android:name="com.example.nutrition_app.ui.meals.SnacksFragment"
+        android:label="SnacksFragment"
+        tools:layout="@layout/snacks"/>
+    <fragment
+        android:id="@+id/mealsFragment"
+        android:name="com.example.nutritionapp.ui.frgment_nave.MealsFragment"
+        android:label="MealsFragment" />
+</navigation>

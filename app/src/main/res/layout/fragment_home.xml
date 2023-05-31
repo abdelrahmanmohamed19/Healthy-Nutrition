@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            tools:context=".ui.frgment_nave.HomeFragment">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/blue1"
+                android:elevation="20dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Welcome Abdelrahman !"
+                            android:textColor="@color/blue4"
+                            android:textSize="20sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/arrow_button"
+                            android:layout_width="41dp"
+                            android:layout_height="35dp"
+                            android:layout_marginEnd="16dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/username"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/username"
+                            app:srcCompat="@drawable/baseline_expand_more_24" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hidden_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+
+                        <TextView
+                            android:id="@+id/daily_calories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/open_sans_extrabold"
+                            android:text="Your Daily Calories: 3600 KCL"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/protien_intake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/open_sans_extrabold"
+                            android:text="Your Daily Protein Intake: 180 grams"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            app:layout_constraintLeft_toLeftOf="@id/Carb_intake"
+                            app:layout_constraintTop_toBottomOf="@id/Carb_intake" />
+
+                        <TextView
+                            android:id="@+id/Carb_intake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/open_sans_extrabold"
+                            android:text="Your Daily Carb Intake: 180 grams"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            app:layout_constraintLeft_toLeftOf="@id/daily_calories"
+                            app:layout_constraintTop_toBottomOf="@id/daily_calories" />
+
+                        <TextView
+                            android:id="@+id/Fats_intake"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/open_sans_extrabold"
+                            android:text="Your Daily Fats Intake: 180 grams"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="@id/protien_intake"
+                            app:layout_constraintTop_toBottomOf="@id/protien_intake" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:text="“Train Your body to crave healthy food”"
+                android:textColor="@color/blue4"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardview" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/card_diabetics"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/height_card"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape_card"
+                android:backgroundTint="@color/blue4"
+                app:layout_constraintEnd_toStartOf="@+id/card_gym"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/quote" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="80dp"
+                android:src="@drawable/ic_diabetes_image"
+                app:layout_constraintBottom_toBottomOf="@+id/card_diabetics"
+                app:layout_constraintEnd_toEndOf="@+id/card_diabetics" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/elevation_element"
+                android:src="@drawable/ic_group"
+                app:layout_constraintBottom_toBottomOf="@+id/card_diabetics"
+                app:layout_constraintEnd_toEndOf="@+id/card_diabetics"
+                app:layout_constraintStart_toStartOf="@id/card_diabetics"
+                app:layout_constraintTop_toTopOf="@+id/card_diabetics"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/diabetics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:elevation="@dimen/elevation_element"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:text="@string/diabetics"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/card_diabetics"
+                app:layout_constraintTop_toTopOf="@+id/card_diabetics" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/card_gym"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/height_card"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_card"
+                android:backgroundTint="@color/blue3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/card_diabetics"
+                app:layout_constraintTop_toTopOf="@+id/card_diabetics" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="80dp"
+                android:src="@drawable/ic_bodybuilding_image"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gym"
+                app:layout_constraintEnd_toEndOf="@+id/card_gym" />
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/elevation_element"
+                android:src="@drawable/ic_group2"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/card_gym"
+                app:layout_constraintEnd_toEndOf="@+id/card_gym"
+                app:layout_constraintStart_toStartOf="@+id/card_gym"
+                app:layout_constraintTop_toTopOf="@+id/card_gym"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/gym_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="@dimen/spacing_specific"
+                android:elevation="@dimen/elevation_element"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:text="@string/gym_players"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/card_gym"
+                app:layout_constraintTop_toTopOf="@+id/card_gym" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/card_weight_loss"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/height_card"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shape_card"
+                android:backgroundTint="@color/blue2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/card_gym"
+                app:layout_constraintTop_toTopOf="@+id/card_pressure" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/elevation_element"
+                android:src="@drawable/ic_group3"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/card_weight_loss"
+                app:layout_constraintEnd_toEndOf="@+id/card_weight_loss"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/card_weight_loss"
+                app:layout_constraintTop_toTopOf="@+id/card_weight_loss"
+                app:layout_constraintVertical_bias="0.6"
+                tools:ignore="ContentDescription" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/card_pressure"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/height_card"
+                android:layout_marginTop="@dimen/spacing_medium"
+                android:background="@drawable/shape_card"
+                android:backgroundTint="@color/blue1"
+                app:layout_constraintEnd_toEndOf="@+id/card_diabetics"
+                app:layout_constraintStart_toStartOf="@+id/card_diabetics"
+                app:layout_constraintTop_toBottomOf="@+id/card_diabetics" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/elevation_element"
+                android:src="@drawable/ic_group"
+                app:layout_constraintBottom_toBottomOf="@+id/card_pressure"
+                app:layout_constraintEnd_toEndOf="@+id/card_pressure"
+                app:layout_constraintStart_toStartOf="@+id/card_pressure"
+                app:layout_constraintTop_toTopOf="@+id/card_pressure"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:elevation="@dimen/elevation_element"
+                android:src="@drawable/ic_objects"
+                app:layout_constraintBottom_toBottomOf="@+id/card_pressure"
+                app:layout_constraintEnd_toEndOf="@+id/card_pressure"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/blood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:elevation="55dp"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:text="@string/blood"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/card_pressure"
+                app:layout_constraintTop_toTopOf="@+id/card_pressure" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_medium"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:elevation="@dimen/elevation_element"
+                android:src="@drawable/ic_illustration"
+                app:layout_constraintBottom_toBottomOf="@+id/card_weight_loss"
+                app:layout_constraintEnd_toEndOf="@+id/card_weight_loss"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/weight_loss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:elevation="@dimen/elevation_element"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:text="@string/weight_loss"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/card_weight_loss"
+                app:layout_constraintTop_toTopOf="@+id/card_weight_loss" />
+
+            <TextView
+                android:id="@+id/header_title2"
+                style="@style/PrimaryTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/do_it_easily"
+                android:textColor="@color/titles"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/card_pressure"
+                app:layout_constraintTop_toBottomOf="@+id/card_pressure" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/calculate_required_calories"
+                android:layout_width="379dp"
+                android:layout_height="114dp"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/shape_card"
+                android:backgroundTint="@color/blue1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_title2" />
+
+
+            <TextView
+                android:id="@+id/text_title_Calculate_required_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginStart="8dp"
+                android:elevation="@dimen/elevation_element"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/calculate_required_calories"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/calculate_required_calories"
+                app:layout_constraintTop_toTopOf="@+id/calculate_required_calories" />
+
+
+            <TextView
+                android:id="@+id/text_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="@dimen/elevation_element"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/get_your"
+                android:textColor="@color/home_card_details"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/image_required_calories"
+                app:layout_constraintStart_toStartOf="@+id/text_title_Calculate_required_calories"
+                app:layout_constraintTop_toBottomOf="@+id/text_title_Calculate_required_calories" />
+
+            <ImageView
+                android:id="@+id/image_required_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="16dp"
+                android:elevation="@dimen/elevation_element"
+                android:src="@drawable/ic_healthy_food"
+                app:layout_constraintBottom_toBottomOf="@+id/calculate_required_calories"
+                app:layout_constraintEnd_toEndOf="@id/calculate_required_calories"
+                app:layout_constraintTop_toTopOf="@+id/calculate_required_calories"
+                tools:ignore="ContentDescription" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</layout>

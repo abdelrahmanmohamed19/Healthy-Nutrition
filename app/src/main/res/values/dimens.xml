@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="spacing_very_small">4dp</dimen>
+
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_extra_large">32dp</dimen>
+
+    <dimen name="radius_small">4dp</dimen>
+    <dimen name="radius_medium">16dp</dimen>
+    <dimen name="radius_large">28dp</dimen>
+
+    <dimen name="font_size_primary">16sp</dimen>
+    <dimen name="font_size_secondary">20sp</dimen>
+    <dimen name="font_size_caption">12sp</dimen>
+    <dimen name="font_size_title">24sp</dimen>
+    <dimen name="font_size_titleExtra">32sp</dimen>
+
+    <dimen name="small_button">24dp</dimen>
+    <dimen name="spacing_too_small">4dp</dimen>
+    <dimen name="fire_calories_counter_size">192dp</dimen>
+    <dimen name="special_height">56dp</dimen>
+    <dimen name="height_action_bar">100dp</dimen>
+    <dimen name="large_image">350dp</dimen>
+
+    <dimen name="height_card">156dp</dimen>
+    <dimen name="height_card_view">56dp</dimen>
+    <dimen name="elevation_element">50dp</dimen>
+    <dimen name="spacing_specific">24dp</dimen>
+    <dimen name="radius_normal">8dp</dimen>
+    <dimen name="spacing_small_specific">12dp</dimen>
+
+
+    <dimen name="height_card_input">85dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#2196F3</color>
+    <color name="green">#39C166</color>
+    <color name="Grey">#333333</color>
+    <color name="breakfast">#2ED12E</color>
+    <color name="launch">#FFA935</color>
+    <color name="Dinner">#12E5B0</color>
+    <color name="Snacks">#B575E7</color>
+    <color name="DarkGreen">#023020</color>
+
+    <color name="blue4">#003060</color>
+    <color name="blue3">#055C9D</color>
+    <color name="blue2">#0E86D4</color>
+    <color name="blue1">#68BBE3</color>
+
+
+    <color name="primary_color">#39C274</color>
+    <color name="background_color">#F1F1F6</color>
+
+    <color name="gray">#D9D9D9</color>
+    <color name="red">#C23939</color>
+
+
+    <color name="normal_text">#FF000000</color>
+
+    <color name="diabetes_card">#FCCF9D</color>
+    <color name="blue_card">#A7DCFF</color>
+    <color name="purple_card">#CAB1FF</color>
+    <color name="yellow_card">#FFB7AA</color>
+
+    <color name="background_color_info">#EFFFF1</color>
+    <color name="text_info_color">#134228</color>
+    <color name="disable_bottom_navigation_bar">#9B9B9B</color>
+    <color name="background_card">#EFFFF1</color>
+
+    <color name="navigation_bar">#FFFFFF</color>
+    <color name="titles">#000000</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_background_secondary">#EFFFF1</color>
+    <color name="text_on_card">#000000</color>
+    <color name="dark">#000000</color>
+    <color name="input_background">#FFFFFF</color>
+    <color name="hint">#5B7C7C7C</color>
+
+    <color name="home_card_background">#EFFFF1</color>
+    <color name="top_meals_card_text">#FFFFFF</color>
+    <color name="home_card_title">#39C274</color>
+    <color name="home_card_details">#000000</color>
+
+    <color name="advices_details">#134228</color>
+</resources>

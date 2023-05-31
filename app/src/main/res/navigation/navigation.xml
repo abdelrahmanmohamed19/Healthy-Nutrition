@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/signInFragment">
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.nutritionapp.ui.startup.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_signInFragment_to_containerFragment"
+            app:destination="@id/containerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.nutritionapp.ui.startup.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.nutritionapp.ui.startup.ForgotPasswordFragment"
+        android:label="fragment_forgotpassword"
+        tools:layout="@layout/fragment_forgotpassword" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_otpVerificationFragment"
+            app:destination="@id/otpVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.example.nutritionapp.startup.OtpVerificationFragment"
+        android:label="fragment_otp_verification"
+        tools:layout="@layout/fragment_otp_verification" >
+        <action
+            android:id="@+id/action_otpVerificationFragment_to_createNewPasswordFragment"
+            app:destination="@id/createNewPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewPasswordFragment"
+        android:name="com.example.nutritionapp.startup.CreateNewPasswordFragment"
+        android:label="fragment_create_new_password"
+        tools:layout="@layout/fragment_create_new_password" >
+        <action
+            android:id="@+id/action_createNewPasswordFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/containerFragment"
+        android:name="com.example.nutritionapp.ui.frgment_nave.ContainerFragment"
+        android:label="fragment_container"
+        tools:layout="@layout/fragment_container" >
+        <action
+            android:id="@+id/action_containerFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_containerFragment_to_moreFragment"
+            app:destination="@id/moreFragment" />
+        <action
+            android:id="@+id/action_containerFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_containerFragment_to_breakFastFragment"
+            app:destination="@id/breakFastFragment" />
+        <action
+            android:id="@+id/action_containerFragment_to_dinnerFragment"
+            app:destination="@id/dinnerFragment" />
+        <action
+            android:id="@+id/action_containerFragment_to_snacksFragment"
+            app:destination="@id/snacksFragment" />
+        <action
+            android:id="@+id/action_containerFragment_to_launchFragment"
+            app:destination="@id/launchFragment" />
+        <action
+            android:id="@+id/action_containerFragment_to_calculateRequiredCaloriesFragment"
+            app:destination="@id/calculateRequiredCaloriesFragment" />
+        <action
+            android:id="@+id/action_containerFragment_to_bestMealsFragment"
+            app:destination="@id/bestMealsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.nutritionapp.ui.frgment_nave.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_calculateRequiredCaloriesFragment"
+            app:destination="@id/calculateRequiredCaloriesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bestMealsFragment"
+            app:destination="@id/bestMealsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.nutritionapp.ui.frgment_nave.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_moreFragment"
+            app:destination="@id/moreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.example.nutritionapp.ui.frgment_nave.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" >
+        <action
+            android:id="@+id/action_moreFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/breakFastFragment"
+        android:name="com.example.nutrition_app.ui.meals.BreakFastFragment"
+        android:label="BreakFastFragment" />
+    <fragment
+        android:id="@+id/dinnerFragment"
+        android:name="com.example.nutrition_app.ui.meals.DinnerFragment"
+        android:label="DinnerFragment" />
+    <fragment
+        android:id="@+id/launchFragment"
+        android:name="com.example.nutrition_app.ui.meals.LaunchFragment"
+        android:label="LaunchFragment" />
+    <fragment
+        android:id="@+id/snacksFragment"
+        android:name="com.example.nutrition_app.ui.meals.SnacksFragment"
+        android:label="SnacksFragment" />
+    <fragment
+        android:id="@+id/calculateRequiredCaloriesFragment"
+        android:name="com.example.nutritionapp.ui.calculater.CalculateRequiredCaloriesFragment"
+        android:label="CalculateRequiredCaloriesFragment" />
+    <fragment
+        android:id="@+id/bestMealsFragment"
+        android:name="com.example.nutritionapp.ui.calculater.BestMealsFragment"
+        android:label="BestMealsFragment" />
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.onboarding.OnBoardingFragment"
+        android:label="OnBoardingFragment" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_containerFragment"
+            app:destination="@id/containerFragment" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+</navigation>

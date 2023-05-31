@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:background="@drawable/bagraoundshap"
+            android:paddingBottom="24dp"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_meal_name"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_marginHorizontal="16dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="French Fries"
+                android:textColor="@color/normal_text"
+                android:layout_marginTop="24dp"
+                android:textSize="16sp"
+                android:maxLines="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/meal_Line_chart"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="56dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_meal_name"
+                tools:ignore="MissingClass" />
+
+            <TextView
+                android:id="@+id/calories_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="sans-serif-black"
+                android:text="230"
+                android:textColor="@color/normal_text"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="@+id/meal_Line_chart"
+                app:layout_constraintEnd_toEndOf="@+id/meal_Line_chart"
+                app:layout_constraintStart_toStartOf="@+id/meal_Line_chart"
+                app:layout_constraintTop_toTopOf="@+id/meal_Line_chart" />
+
+            <TextView
+                android:id="@+id/calories_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="calories/100g"
+                android:textColor="@color/normal_text"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/calories_value"
+                app:layout_constraintStart_toStartOf="@+id/calories_value"
+                app:layout_constraintTop_toBottomOf="@+id/calories_value" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fabric_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toStartOf="@+id/sugar_container"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/meal_Line_chart">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fabric_value_container"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/fabric_shape"
+                    app:backgroundTint="#AD5394"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/fabric_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:lineSpacingMultiplier="0.26"
+                        android:text="5"
+                        android:textColor="@color/normal_text"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:lineHeight="24dp"
+                        tools:lineHeight="24px" />
+
+                    <TextView
+                        android:id="@+id/gram_Label1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="gram"
+                        android:textColor="@color/normal_text"
+                        android:textSize="8sp"
+                        app:layout_constraintEnd_toEndOf="@+id/fabric_quantity"
+                        app:layout_constraintStart_toStartOf="@+id/fabric_quantity"
+                        app:layout_constraintTop_toBottomOf="@+id/fabric_quantity" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/fabric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="FABRIC"
+                    android:textColor="@color/normal_text"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fabric_value_container" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sugar_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/fabric_container"
+                app:layout_constraintEnd_toStartOf="@+id/fat_container"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/fabric_container"
+                app:layout_constraintTop_toTopOf="@+id/fabric_container">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/sugar_value_container"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/sugar_shape"
+                    app:backgroundTint="#AD5394 "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/sugar_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="5"
+                        android:textColor="@color/normal_text"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gram_Label2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="gram"
+                        android:textColor="@color/normal_text"
+                        android:textSize="8sp"
+                        app:layout_constraintEnd_toEndOf="@+id/sugar_quantity"
+                        app:layout_constraintStart_toStartOf="@+id/sugar_quantity"
+                        app:layout_constraintTop_toBottomOf="@+id/sugar_quantity" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/sugar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="SUGAR"
+                    android:textColor="@color/normal_text"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sugar_value_container" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fat_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/sugar_container"
+                app:layout_constraintEnd_toStartOf="@+id/protein_container"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/sugar_container"
+                app:layout_constraintTop_toTopOf="@+id/sugar_container">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/fat_value_container"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/fat_shape"
+                    app:backgroundTint="#AD5394 "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/fat_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="5"
+                        android:textColor="@color/normal_text"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gram_Label3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="gram"
+                        android:textColor="@color/normal_text"
+                        android:textSize="8sp"
+                        app:layout_constraintEnd_toEndOf="@+id/fat_quantity"
+                        app:layout_constraintStart_toStartOf="@+id/fat_quantity"
+                        app:layout_constraintTop_toBottomOf="@+id/fat_quantity" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/fat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="FAT"
+                    android:textColor="@color/normal_text"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fat_value_container" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/protein_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/fat_container"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/fat_container"
+                app:layout_constraintTop_toTopOf="@+id/fat_container">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/protein_value_container"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:background="@drawable/protein_shape"
+                    app:backgroundTint="#AD5394 "
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/protein_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="5"
+                        android:textColor="@color/normal_text"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/gram_Label4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="gram"
+                        android:textColor="@color/normal_text"
+                        android:textSize="8sp"
+                        app:layout_constraintEnd_toEndOf="@+id/protein_quantity"
+                        app:layout_constraintStart_toStartOf="@+id/protein_quantity"
+                        app:layout_constraintTop_toBottomOf="@+id/protein_quantity" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/protein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="PROTEIN"
+                    android:textColor="@color/normal_text"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/protein_value_container" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
